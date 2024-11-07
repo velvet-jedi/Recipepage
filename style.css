@@ -1,0 +1,169 @@
+@font-face {
+	font-family: "Outfit";
+	src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "Young";
+	src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+* {
+	box-sizing: border-box;
+	letter-spacing: 0.05em;
+	padding: 0;
+	margin: 0;
+	font-family: "Outfit";
+}
+h1 {
+	margin-top: 0.5em;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+.heading {
+	font-family: "Young";
+}
+#header > p {
+	color: rgb(84, 74, 74);
+}
+
+.main {
+	background-color: rgb(215, 230, 220);
+	width: 42rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2rem;
+	margin: 2rem;
+	border-radius: 2rem;
+}
+.main > article {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+img {
+	/* height: 20rem;
+	width: 40rem; */
+	border-radius: 1rem;
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body {
+	margin-top: 4rem;
+	/* background-color: antiquewhite; */
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+}
+tr {
+	display: -ms-inline-grid;
+	justify-items: start;
+}
+td {
+	width: 100%;
+	padding-right: 18rem;
+}
+
+#prep {
+	background-color: pink;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+#prep > h3 {
+	color: purple;
+}
+.dark {
+	color: purple;
+}
+.ul {
+	padding: 1rem 3rem;
+	line-height: 170%;
+}
+hr {
+	color: aliceblue;
+	content: "";
+}
+#Ingredients > ul {
+	color: rgb(84, 74, 74);
+	padding: 1rem 1rem;
+}
+
+#Ingredients > ul > li {
+	color: rgb(84, 74, 74);
+	line-height: 170%;
+}
+
+#Instructions > ol {
+	color: rgb(84, 74, 74);
+	padding: 1rem 1rem;
+}
+
+#Instructions > ol > li {
+	color: rgb(84, 74, 74);
+	line-height: 170%;
+}
+
+.Nutrition {
+	display: flex;
+	flex-direction: column;
+	/* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+	gap: 0.5rem;
+
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.Nutrition > .row {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	color: rgb(84, 74, 74);
+	align-items: center;
+	border-bottom: 1px solid #ccc; /* Separator line */
+}
+#Nutrition > p {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: rgb(84, 74, 74);
+}
+.Nutrition .stat,
+.Nutrition .value {
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+}
+
+.Nutrition .stat {
+	text-align: left;
+	flex: 1; /* Allow stat to take equal space */
+}
+
+.Nutrition .value {
+	text-align: left;
+	flex: 1; /* Ensure value aligns evenly */
+	margin-right: 0; /* Remove any extra margin */
+}
+
+@media (max-width: 768px) {
+	.main {
+		width: 100%;
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
